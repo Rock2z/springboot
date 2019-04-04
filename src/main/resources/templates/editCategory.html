@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+    <title>Title</title>
+</head>
+<body>
+
+
+<form action="../Category" method="post" class="mx-auto">
+    <input type="hidden" name="_method" value="PUT"/>
+    <div class="input-group mb-3 col-4 mx-auto">
+        <div class="input-group-prepend">
+            <span class="input-group-text">NAME</span>
+        </div>
+        <input type="text" class="form-control" name="name" th:value="${c.name}">
+        <input th:value="${c.id}" type="hidden" name="id">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+
+</body>
+</html>
