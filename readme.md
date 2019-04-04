@@ -1,6 +1,4 @@
-之前一直没写关于Springboot的文章, 因为的确Springboot配置非常简单, 而且集成度比较高, 这次我做的是一个用Springboot框架搭建的符合RESTful风格的web应用项目, 主要是实现了CRUD功能和分页功能;
-
-这个项目的所有源代码我已经上传至github
+我做的是一个用Springboot框架搭建的符合RESTful风格的web应用项目, 主要是实现了CRUD功能和分页功能;
 
 持久层使用的是springboot jpa 基于hibernate来操作mysql数据库
 控制层使用的是Springboot的Controller, 本质上还是基于SpringMVC的
